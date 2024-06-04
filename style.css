@@ -1,0 +1,132 @@
+/* Debug outlines for positioning
+* {
+    outline: 1px rgba(225, 0, 0, 0.4) dashed;
+}
+*/
+
+header {
+    display: flex;
+    background-color: #061130;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button {
+    color: white;
+    border-radius: 10px;
+    background-color: #1C4BC4;
+    padding: .5em .5em;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+button:hover {
+    background-color: #143485;
+}
+
+header a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 1em;
+}
+
+
+body {
+    margin: 0;
+    color: white;
+    height: 100vh;
+}
+
+
+main {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #061130;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.left {
+    width:40%;
+}
+
+.right {
+    width: 60%;
+}
+
+
+.accent {
+    color: #fafd61;
+}
+
+.left p {
+    font-size: .85em;
+    line-height: 2em;
+}
+
+.img-size {
+    width: 100%
+}
+
+
+.links {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+footer {
+    display: flex;
+    background-color: #F4F6F8;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.gutters {
+    padding: 0 150px;
+}
+
+@media (max-width: 850px) {
+    main{
+        flex-direction: column;
+    }
+    .gutters {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left {
+        width: 80%;
+    }
+    .right {
+        width: 80%
+    }
+}
